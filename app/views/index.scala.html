@@ -1,0 +1,10 @@
+@(urlForm: Form[models.Tautan.Tautan])
+
+@import helper._
+@main("Linknya"){
+    @form(routes.Application.prosesChapter()){
+        @inputText(urlForm("url"))
+        @inputText(urlForm("kelas"))
+	    <button>Lihat</button>
+    }
+}
